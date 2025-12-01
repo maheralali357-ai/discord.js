@@ -1,0 +1,10 @@
+js
+const { Client } = require("discord.js");
+
+const client = new Client({ intents: 53608447 });
+
+client.on("ready", () => {
+  console.log(`✅ Logged in as ${client.user.tag}!`);
+});
+
+client.login(""); // Your bot token here
